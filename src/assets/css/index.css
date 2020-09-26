@@ -1,3 +1,14 @@
-body{
-  background:url('../image/coast.jpg');
+
+@font-face {
+    font-family: 'webfont';
+    font-display: swap;
+    src: url('webfont.woff') format('woff'), /* chrome、firefox */
+}
+
+body {
+  /* color: pink;   */
+  
+  /* 字体样式 */
+
+  font-family: "webfont" !important;
 }

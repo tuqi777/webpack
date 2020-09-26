@@ -97,17 +97,6 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/
 
 /***/ }),
 
-/***/ "./src/assets/css/index2.css":
-/*!***********************************!*\
-  !*** ./src/assets/css/index2.css ***!
-  \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/assets/css/index2.css?");
-
-/***/ }),
-
 /***/ "./src/assets/image/coast.jpg":
 /*!************************************!*\
   !*** ./src/assets/image/coast.jpg ***!
@@ -116,7 +105,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/coast.jpg\");\n\n//# sourceURL=webpack:///./src/assets/image/coast.jpg?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"assets/images/coast.jpg\");\n\n//# sourceURL=webpack:///./src/assets/image/coast.jpg?");
 
 /***/ }),
 
@@ -128,7 +117,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _assets_css_index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/css/index.css */ \"./src/assets/css/index.css\");\n/* harmony import */ var _assets_css_index_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_assets_css_index_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _assets_css_index2_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/css/index2.css */ \"./src/assets/css/index2.css\");\n/* harmony import */ var _assets_css_index2_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_assets_css_index2_css__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _assets_image_coast_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./assets/image/coast.jpg */ \"./src/assets/image/coast.jpg\");\nconsole.log('你的心有一道墙'); \r\n\r\n\r\n\r\n// import \"./assets/css/pre.scss\"\r\nlet img = new Image()\r\nimg.src = _assets_image_coast_jpg__WEBPACK_IMPORTED_MODULE_2__[\"default\"]\r\nlet app =  document.getElementById('app')\r\napp.append(img)\n\n//# sourceURL=webpack:///./src/query.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _assets_css_index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/css/index.css */ \"./src/assets/css/index.css\");\n/* harmony import */ var _assets_css_index_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_assets_css_index_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _assets_image_coast_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/image/coast.jpg */ \"./src/assets/image/coast.jpg\");\nconsole.log('我的心有replaceLoader'); \r\n\r\n\r\n\r\n// import \"./assets/css/pre.scss\"\r\nlet img = new Image()\r\nimg.src = _assets_image_coast_jpg__WEBPACK_IMPORTED_MODULE_1__[\"default\"]\r\nlet app =  document.getElementById('app')\r\napp.append(img)\n\n//# sourceURL=webpack:///./src/query.js?");
 
 /***/ })
 
