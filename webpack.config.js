@@ -3,16 +3,27 @@ const path = require('path')
 const htmlPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const minicssPlugin = require('mini-css-extract-plugin')
-const fileLoader = require('file-loader')
-const replaceLoaderAsync = require('./loaders/replaceLoaderAsync')
-
+const webpack = require('webpack')
 
 module.exports = {
   mode:'development',
   entry:'./src/query.js',
   output: {
-    path:path.resolve(__dirname,'bundle'),
+    path:path.resolve(__dirname,'dist'),
     filename:'[name].js'
+  },
+  devtool: 'inline-source-map',
+  devServer: {
+    open: true,
+    contentBase: './dist',
+    port: 8000,
+    // hot: true,
+    hotOnly: true,
+    proxy: {
+      '/api': {
+        target: 'http://localhost:3000'
+      } 
+    }
   },
   resolveLoader:{
     modules:["./node_modules", './loaders']
@@ -21,11 +32,11 @@ module.exports = {
     rules: [
       {
         test: /\.css$/, 
-        use: [minicssPlugin.loader,'css-loader'],
+        use: [minicssPlugin.loader,'css-loader','postcss-loader'],
       },
       {
         test: /\.scss$/,
-        use: ['style-loader' ,'css-loader','sass-loader']
+        use: ['style-loader' ,'css-loader','postcss-loader','sass-loader']
       },
       {
         test: /\.(png|jpe?g|gif|svg)$/,
@@ -72,6 +83,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new minicssPlugin({
       filename:'css/[name].css',
-    })
+    }),
+    new webpack.HotModuleReplacementPlugin()
   ]
 }

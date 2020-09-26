@@ -1,0 +1,16 @@
+
+@font-face {
+    font-family: 'webfont';
+    font-display: swap;
+    src: url(webfont.woff) format('woff'), /* chrome、firefox */
+}
+
+body {
+  /* color: pink;   */
+
+  /* 字体样式 */
+
+  font-family: "webfont" !important;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vc3JjL2Fzc2V0cy9jc3MvaW5kZXguY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFDQTtJQUNJLHNCQUFzQjtJQUN0QixrQkFBa0I7SUFDbEIsMkRBQTREO0FBQ2hFOztBQUVBO0VBQ0UsbUJBQW1COztFQUVuQixTQUFTOztFQUVULGlDQUFpQztBQUNuQyxDIiwiZmlsZSI6ImNzcy9tYWluLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIlxyXG5AZm9udC1mYWNlIHtcclxuICAgIGZvbnQtZmFtaWx5OiAnd2ViZm9udCc7XHJcbiAgICBmb250LWRpc3BsYXk6IHN3YXA7XHJcbiAgICBzcmM6IHVybCgnd2ViZm9udC53b2ZmJykgZm9ybWF0KCd3b2ZmJyksIC8qIGNocm9tZeOAgWZpcmVmb3ggKi9cclxufVxyXG5cclxuYm9keSB7XHJcbiAgLyogY29sb3I6IHBpbms7ICAgKi9cclxuXHJcbiAgLyog5a2X5L2T5qC35byPICovXHJcblxyXG4gIGZvbnQtZmFtaWx5OiBcIndlYmZvbnRcIiAhaW1wb3J0YW50O1xyXG59Il0sInNvdXJjZVJvb3QiOiIifQ==*/
