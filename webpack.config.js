@@ -3,6 +3,8 @@ const path = require('path')
 const htmlPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const minicssPlugin = require('mini-css-extract-plugin')
+const fileLoader = require('file-loader')
+
 
 module.exports = {
   mode:'development',
@@ -21,16 +23,25 @@ module.exports = {
       //   test: /\.scss$/,
       //   use: ['style-loader' ,'css-loader','sass-loader']
       // }
+      {
+        test: /\.(png|jpe?g|gif|svg)$/,
+        use: {
+          loader:'file-loader',
+          options: {
+            name: 'images/[name].[ext]'
+          }
+        }
+      }
     ]
   },
   plugins:[
     new htmlPlugin({
       template:'./src/index.html',
-      filename:'html/index.html'
+      filename:'index.html'
     }),
     new CleanWebpackPlugin(),
     new minicssPlugin({
-      filename:'css/[name].css',
+      filename:'[name].css',
     })
   ]
 }
