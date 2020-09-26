@@ -1,0 +1,33 @@
+{
+  "name": "lp",
+  "version": "1.0.0",
+  "description": "demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "builds": "webpack --config webpack.m.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tuqi777/webpack.git"
+  },
+  "keywords": [
+    "demo"
+  ],
+  "author": "lp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tuqi777/webpack/issues"
+  },
+  "homepage": "https://github.com/tuqi777/webpack#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^4.3.0",
+    "html-webpack-plugin": "^4.5.0",
+    "mini-css-extract-plugin": "^0.11.2",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^10.0.2",
+    "style-loader": "^1.2.1"
+  }
+}
